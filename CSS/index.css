@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+#SEC {
+    background-color: black;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.first {
+    color: white;
+    position: relative;
+    margin-top: 20vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 700px;
+    font-size: 35px;
+    border: 1px white solid;
+    border-radius: 20px;
+    height: 60vh;
+}
+
+.first p,
+h4 {
+    margin: 10px;
+}
+
+.first h4,
+.secon h4,
+.third h4 {
+   color: crimson;
+}
+
+.secon {
+    color: white;
+    position: relative;
+    margin-top: 2vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 700px;
+    font-size: 35px;
+    border: 1px white solid;
+    border-radius: 20px;
+    height: 60vh;
+}
+
+.third {
+    color: white;
+    position: relative;
+    margin-top: 2vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 700px;
+    font-size: 35px;
+    border: 1px white solid;
+    border-radius: 20px;
+    height: 60vh;
+}
+
+.me {
+    height: 40vh;
+    position: relative;
+    margin-bottom: 27px;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+}
+
+.intro {
+    color: white;
+    margin-left: 10px;
+    font-size: 2rem;
+    position: relative;
+    word-spacing: .2rem;
+    margin-bottom: 30px;
+}
+
+span {
+    color: crimson;
+}
+
+.cont {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at center, rgb(53, 1, 4), rgb(241, 151, 151));
+    border-radius: 300px 300px 300px 300px;
+    height: 300px;
+    width: 300px;
+}
+
+.links {
+  background: linear-gradient(100deg, rgba(218, 210, 210, 0.103), rgba(202, 200, 198, 0.164) 88%,
+    rgba(235, 224, 210, 0.3));
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .1;
+
+}
+
+.flip-card {
+   background-color: transparent;
+   width:  190px;
+   height: 254px;
+   perspective: 1000px;
+   font-family: sans-serif;
+   position: relative;
+   z-index: 3;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 1005;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d ;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(238, 237, 236);
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    background: linear-gradient( 120deg, rgb(235, 69, 69) 60%,
+     rgba(189, 70, 70, 0.445) 88%,
+       rgb(143, 68, 68) 40%, rgb(134, 60, 60) 48%);
+     color: rgba(216, 183, 171, 0.692);
+}
+
+.flip-card-back {
+    background: linear-gradient(120deg, rgb(255, 7, 7) 38%,
+    rgba(189, 70, 70, 0.445) 88%,
+       bisque 40%, rgba(241, 6, 6, 0.623) 78%);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+a {
+    color: white;
+}
