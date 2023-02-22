@@ -1,5 +1,5 @@
 const navbar = document.getElementById("navbar");
-fetch("/SRC/navB.html")
+fetch("SRC/navB.html")
   .then((response) => response.text())
   .then((html) => (navbar.innerHTML = html))
 
