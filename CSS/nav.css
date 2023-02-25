@@ -29,7 +29,7 @@ header {
 }
 
 .Mark::before,
-a::before{
+header a::before{
    content: '';
    position: absolute;
    bottom: 0;
@@ -41,7 +41,7 @@ a::before{
 }
 
 .Mark:hover::before,
-a:hover::before {
+header a:hover::before {
     width: 100%;
     right: 0;
 }

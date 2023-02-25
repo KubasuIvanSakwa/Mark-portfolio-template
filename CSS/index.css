@@ -71,11 +71,11 @@ h4 {
 }
 
 .me {
-    height: 40vh;
+    height: 50vh;
     position: relative;
     margin-bottom: 27px;
-    border-bottom-left-radius: 300px;
-    border-bottom-right-radius: 300px;
+    border-bottom-left-radius: 320px;
+    border-bottom-right-radius: 340px;
 }
 
 .intro {
@@ -178,7 +178,7 @@ span {
 
 .flip-card-back {
     background: linear-gradient(120deg, rgb(255, 7, 7) 38%,
-    rgba(189, 70, 70, 0.445) 88%,
+    rgb(189, 70, 70) 88%,
        bisque 40%, rgba(241, 6, 6, 0.623) 78%);
     color: white;
     transform: rotateY(180deg);
